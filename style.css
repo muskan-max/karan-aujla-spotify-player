@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
-    background-color: white;
+    background-color:white;
     color: white;
     font-family: 'Varela Round', sans-serif;
 }
@@ -47,6 +47,7 @@ nav ul li:hover {
     font-size: 1.3rem;
 }
 
+
 .container {
     min-height: 72vh;
     background-image: url('karan.png');
@@ -61,7 +62,8 @@ nav ul li:hover {
     border-radius: 12px;
     box-shadow: 0px 4px 20px rgba(0,0,0,0.6);
 }
-.container h1 {
+.container h1
+{
     margin-bottom: 10px;
 }
 
@@ -70,7 +72,7 @@ nav ul li:hover {
     background-color: rgba(0,0,0,0.65);
     border-radius: 15px;
     padding: 20px;
-    color: black;
+    color:black
 }
 
 /* Song container */
@@ -128,6 +130,7 @@ nav ul li:hover {
   vertical-align: middle;
 }
 
+
 /* Bottom Player */
 .bottom {
     position: sticky;
@@ -174,8 +177,7 @@ nav ul li:hover {
     transition: opacity 0.4s ease-in;
 }
 
-/* Responsive styles */
-
+/* Responsive */
 @media only screen and (max-width: 1100px) {
     body {
         background-color: #121212;
@@ -183,75 +185,8 @@ nav ul li:hover {
     .container {
         width: 90%;
         padding: 20px;
-        flex-direction: column;  /* Stack vertically */
-        align-items: center;     /* Center content */
-        background-position: center center;
-    }
-    .songPanel {
-        width: 100%;             /* Full width on smaller screens */
-        margin-top: 20px;        /* spacing from background image */
-        padding: 15px;
     }
     .songInfo {
         left: 5vw;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    nav ul {
-        flex-wrap: wrap;       /* Wrap nav items */
-        height: auto;
-        padding: 10px;
-    }
-    nav ul li {
-        padding: 8px 10px;
-        font-size: 0.9rem;
-    }
-    .brand {
-        font-size: 1.1rem;
-    }
-    .container {
-        width: 95%;
-        padding: 10px;
-        background-position: center center;
-        min-height: auto;
-    }
-    .songPanel {
-        width: 100%;
-        padding: 10px;
-    }
-    .songItem {
-        padding: 8px;
-    }
-    .songName {
-        font-size: 0.9rem;
-        padding: 0 5px;
-    }
-    .timestamp {
-        font-size: 0.8rem;
-    }
-    .bottom {
-        height: 100px;
-        padding: 10px 5px;
-    }
-    #myProgressBar {
-        width: 95vw;
-    }
-    .icons i {
-        font-size: 1.2rem;
-        margin: 0 8px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .songItem img {
-        width: 40px;
-        height: 40px;
-    }
-    .songName {
-        font-size: 0.8rem;
-    }
-    .timestamp {
-        font-size: 0.75rem;
     }
 }
